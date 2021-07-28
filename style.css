@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+
+body
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative; 
+}
+h1
+{
+    font-family: 'Changa', sans-serif;
+    text-align: center;
+    color: #a01a7d;
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: #a01a7d;
+    color: #edf2f4;
+    font-family: 'Changa', sans-serif;
+}
+.menu li
+{
+    display: inline;
+    padding: 5px;
+    
+}
+.menu a
+{
+    text-decoration: none;
+    color: #edf2f4;
+    font-size:large;
+    font-family: 'Changa', sans-serif;
+}
+.aboutMe img
+{
+    width: 350px;
+    margin-top: 5%;
+    border-radius: 7px;
+}
+
+.aboutMe 
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.personalProfile
+{
+    width: 40%;
+    text-align: left;
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icons li
+{
+    list-style: none;
+}
+
+.icons {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 524px;
+    width: 100%; 
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 7px;
+  
+   
+  }
+  .about:hover .icons {
+    visibility: visible;
+    opacity: 1;
+    
+  }
+  .about:hover .image{
+      opacity: 0.6;
+  }
+  .icons:hover li a{
+     
+      opacity: 1;
+  }
+  .icons {
+      display: flex;
+      justify-content: space-evenly;
+     text-align: center;
+     align-items: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .about {
+     
+    position: relative;
+ 
+  }
+ .icons i{
+      color: white;
+      font-size: 30px;
+  }
+   .icons li:hover{
+       opacity: 1;
+   }
+   .skills
+   {
+      margin: auto;
+      display: flex;
+      width: 80%;
+      
+   }
+   .skills div
+   {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 28%;
+    margin:0 auto;
+    background-color: #a01a7d;
+    color: white;
+   
+    
+   }
+   .skills li 
+   {
+       list-style: none;
+       text-align: justify;
+   }
+  
+ /*   .projects
+   {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto 10%;
+   } */
+   .container {
+    display: grid;
+    
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    width: 80%;
+    justify-items: center;
+  }.card-projects{
+      
+      
+       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+       transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+       padding-bottom: 7px;
+       
+   }
+   .card-projects:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  
+   .projects img{
+       width: 80%;
+   }
+   .projects button {
+       background-color: #a01a7d;
+       border:none;
+       border-radius: 7px;
+       color: white;
+       padding: 14px 40px;
+       
+  }
+   .red-heart {
+    color: red;
+  }
+
+
+.mySlides
+{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  width: 80%;
+  margin: auto;
+  background-color: #a01a7d;
+  color: white;
+}
+#experiences button
+{
+  background-color: #a01a7d;
+  color: white;
+}
+
+.contact{
+  
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center
+  
+} 
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #a01a7d;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #a01a7d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #a01a7d;
+}
+footer{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-evenly;
+ padding:50px 20px;
+  background: #a01a7d;
+  color: #fff;
+}
+@media (max-width: 950px) {
+  .contact{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .contact .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .contact{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .contact .content{
+    flex-direction: column-reverse;
+  }
+ .contact .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .contact .content .left-side::before{
+   display: none;
+ }
+ .contact .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
